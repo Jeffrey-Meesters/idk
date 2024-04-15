@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jeffrey Meesters' profile page. See trainings I did and books I read, related to my work in Webdevelopment.">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Chapter Lead, Jeffrey, Meesters, CV, resume, Vue, Qwik, Webdeveloper">
+  <meta name="author" content="Jeffrey Meesters">
+  <title>Training: Engineering Management.</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .pressed:nth-of-type(1) {
+      transition: all 300ms ease-in-out;
+      transform: rotate(45deg);
+      transform-origin: top left;
+    }
+
+    .pressed:nth-of-type(2) {
+      width: 0;
+    }
+
+    .pressed:nth-of-type(3) {
+      transition: all 300ms ease-in-out;
+      transform: rotate(-45deg);
+      transform-origin: bottom left;
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white tracking-wide leading-5">
+  <header class="flex flex-row px-6 pt-2 place-content-between">
+    <h1 class="text-2xl font-bold tracking-tight">Training log</h1>
+    <nav>
+      <button id="toggle-nav-aside" aria-label="toggle visibility of a list of navigation items" aria-pressed="false"
+        class="not-pressed">
+        <div class="bar bg-white my-2 mx-0 w-9 h-1"></div>
+        <div class="bar bg-white my-2 mx-0 w-9 h-1"></div>
+        <div class="bar bg-white my-2 mx-0 w-9 h-1"></div>
+      </button>
+    </nav>
+  </header>
+  <main class="relative px-6 py-2 min-h-screen" aria-live="polite">
+    <h2 id="article-title" class="text-2xl tracking-tight text-center bg-slate-800">
+      Engineering Management: The Foundations of Technical Leadership
+    </h2>
+    <hr class="border-b-2 mb-4">
+    <section class="flex flex-col md:flex-row container gap-2 w-full">
+      <aside class="basis-1/4 order-2 md:order-1 mt-6 md:mt-0">
+        <ul>
+          <li>Grade: N/A</li>
+          <li>
+            <a class="underline" href="#">Link to certificate</a>
+          </li>
+          <li>Status: completed</li>
+          <li>completion date: 15/04/24</li>
+        </ul>
+      </aside>
+      <article class="basis-2/3 order-1 md:order-2" aria-labelledby="article-title">
+        <p class="text-justify">
+          If you recently transitioned from an engineering role to a people manager, you may be struggling with the
+          psychological shift that comes with pivoting your focus from computer science to people science. But even if
+          you’ve managed the move so far with ease, or are already a seasoned technical leader, continuing to practice a
+          few key techniques can ensure you feel more prepared and confident leading your technical team.
+        </p>
+        <p class="py-2 text-justify">
+          This self paced course walks you through fundamental techniques that will help you navigate the complexities
+          of engineering management.
+        </p>
+        <h3 class="text-xl pt-6 pb-2">What you’ll learn and how you can apply it</h3>
+        <ul class="pl-4 list-disc">
+          <li>How to give effective and actionable feedback</li>
+          <li>Tactical techniques to manage your time effectively</li>
+          <li>Tips and tricks for building an effective developer onboarding experience</li>
+          <li>Ways to empower your team members to ensure they reach (and surpass) their full potential</li>
+          <li>Facilitate straightforward, productive, and enjoyable one-on-ones</li>
+          <li>Identify key focus areas to be an effective engineering manager and leader for your team’s unique needs
+          </li>
+          <li>Establish a motivating team vision to help propel your team through the toughest challenges</li>
+          <li>Strategies for fostering diverse and inclusive teams</li>
+        </ul>
+        <h3 class="text-xl pt-6 pb-2">This course is for you because</h3>
+        <ul class="pl-4 list-disc">
+          <li>You're an individual contributor interested to learn about the expectations of an Engineering Manager</li>
+          <li>You're looking to move into an Engineering Manager role in the near future</li>
+          <li>You're an existing Engineering Manager, Tech Lead, etc and want to explore the fundamentals of the role
+          </li>
+        </ul>
+      </article>
+      <aside class="basis-1/4 order-3 md:order-3 mt-6 md:mt-0">
+        <ul class="md:text-right">
+          <li>
+            <a class="underline" href="#">Link to training</a>
+          </li>
+          <li>
+            Platform: O'Reilly
+          </li>
+          <li>
+            Author: Kate Wardin
+          </li>
+        </ul>
+      </aside>
+    </section>
+    <aside id="nav-aside"
+      class="invisible block absolute top-0 right-0 bg-gray-800 rounded-l-md w-full min-h-screen max-h-screen md:w-96">
+      <nav class="px-4 py-2">
+        <ul class="mb-4 flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400">
+          <li class="me-2">
+            <a href="#"
+              class="inline-flex items-center justify-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group">
+              <svg
+                class="w-4 h-4 me-2 text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300"
+                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
+              </svg>
+              Profile
+            </a>
+          </li>
+          <li class="me-2">
+            <a href="#"
+              class="inline-flex items-center justify-center p-4 border-b-2 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500 group"
+              aria-current="page">
+              <svg class="w-4 h-4 me-2 text-blue-600 dark:text-blue-500" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                <path
+                  d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z" />
+              </svg>
+              Trainings
+            </a>
+          </li>
+          <li class="me-2">
+            <a href="#"
+              class="inline-flex items-center justify-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group">
+              <svg
+                class="w-4 h-4 me-2 text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300"
+                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                <path
+                  d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
+              </svg>
+              Books
+            </a>
+          </li>
+        </ul>
+        <ul class="text-clip overflow-hidden">
+          <li>
+            <a href="#">
+              Other training 1
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Other training 2
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Other training 3
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Other training 4
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Other training 5
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Other training 6
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </main>
+  <footer class="px-4 py-2 text-right">
+    Jeffrey Meesters - © 2024
+  </footer>
+
+  <script>
+    const buttonElement = document.getElementById('toggle-nav-aside')
+
+    function showOrHideNavAside() {
+      const navAsideElement = document.getElementById('nav-aside')
+      const barMenuElements = document.querySelectorAll('.bar')
+
+      navAsideElement?.classList.toggle('invisible')
+      barMenuElements?.forEach(bar => bar?.classList.toggle('pressed'))
+    }
+
+    function setArriaPressed() {
+      // Check to see if the button is pressed
+      const pressed = buttonElement?.getAttribute("aria-pressed") === "true"
+      // Change aria-pressed to the opposite state
+      buttonElement?.setAttribute("aria-pressed", !pressed)
+    }
+
+    buttonElement?.addEventListener('click', showOrHideNavAside)
+  </script>
+</body>
+
+</html>
